@@ -5,9 +5,12 @@
     <title>A Website</title>
   </head>
   <body>
+    <!-- bring in header partial -->
     {{> header}}
+    <!-- use screamIt helper for hbs to make welcomeMessage from serverjs to uppercase -->
+    <!--screamIt is the method/function and welcomeMessage is the parameter passed -->
     <p>{{screamIt welcomeMessage}}</p>
-    <!-- larger than symbol in front of file name indicates bringing in partial -->
+    <!-- bring in footer partial -->
     {{> footer}}
   </body>
 </<html>
